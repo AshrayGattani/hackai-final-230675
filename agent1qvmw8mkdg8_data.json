@@ -1,0 +1,51 @@
+{
+    "1": {
+        "type": "Headphones",
+        "brand": "Sony",
+        "color": "Black",
+        "available": true
+    },
+    "2": {
+        "type": "Fridge",
+        "brand": "LG",
+        "color": "Silver",
+        "available": true
+    },
+    "3": {
+        "type": "TV",
+        "brand": "Mi",
+        "color": "Blue",
+        "available": true
+    },
+    "4": {
+        "type": "Phone",
+        "brand": "Apple",
+        "color": "Red",
+        "available": true
+    },
+    "1": {
+        "type": "Headphones",
+        "brand": "Sony",
+        "color": "Black",
+        "available": true
+    },
+    "2": {
+        "type": "Fridge",
+        "brand": "LG",
+        "color": "Silver",
+        "available": true
+    },
+    "3": {
+        "type": "TV",
+        "brand": "Mi",
+        "color": "Blue",
+        "available": true
+    },
+    "4": {
+        "type": "Phone",
+        "brand": "Apple",
+        "color": "Red",
+        "available": true
+    },
+    "total_clothing_queries": 11
+}

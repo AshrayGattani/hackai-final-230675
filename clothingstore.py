@@ -24,6 +24,8 @@ CLOTHING_ARTICLES = {
     # Add more clothing articles as needed
 }
 
+
+
 # Set the clothing articles information in the store's protocols
 for (number, article) in CLOTHING_ARTICLES.items():
     clothing_store._storage.set(number, article.dict())
