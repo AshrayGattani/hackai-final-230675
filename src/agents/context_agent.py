@@ -10,7 +10,7 @@ import json
 # HUGGING_FACE_ACCESS_TOKEN = os.getenv(
 #     "HUGGING_FACE_ACCESS_TOKEN", "HUGGING FACE secret phrase :)")
 
-# HUGGING_FACE_ACCESS_TOKEN = "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"
+HUGGING_FACE_ACCESS_TOKEN = "ENTER TOKEN HERE"
 
 # Define configurations used for HTTP requests to Hugging Face
 SENTIMENT_URL = "https://api-inference.huggingface.co/models/deepset/roberta-base-squad2"
@@ -18,7 +18,7 @@ SENTIMENT_URL = "https://api-inference.huggingface.co/models/deepset/roberta-bas
 # Define headers for HTTP request, including content type and authorization details
 HEADERS = {
     "Content-Type": "application/json",
-    "Authorization": f"Bearer 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"
+    "Authorization": f"Bearer {HUGGING_FACE_ACCESS_TOKEN}"
 }
 
 # Create an agent with predefined properties

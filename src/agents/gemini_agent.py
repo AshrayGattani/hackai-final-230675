@@ -15,7 +15,7 @@ import json
 # Define configurations used for HTTP requests to Hugging Face
 import google.generativeai as genai
 
-os.environ['GOOGLE_API_KEY'] = "AIzaSyAM-r5O4jcnGuecd42RV3keS9BHTaY-aA4"
+os.environ['GOOGLE_API_KEY'] = "ENTER KEY HERE"
 genai.configure(api_key = os.environ['GOOGLE_API_KEY'])
 
 model = genai.GenerativeModel('gemini-pro')
