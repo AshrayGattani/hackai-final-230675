@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "Hack-230675"
+version = "0.1.0"
+description = ""
+authors = ["Shlok-09 <shlok.mangle@gmail.com>"]
+readme = "README.md"
+packages = [{include = "Hack-230675"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+echo "# hackai-final-230675" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/AshrayGattani/hackai-final-230675.git
+git push -u origin main
