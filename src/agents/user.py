@@ -4,9 +4,11 @@ from protocols.elecquery import QueryElecRequest, QueryElecResponse
 from protocols.elecbook import BookElecRequest, BookElecResponse
 from protocols.furniquery import QueryFurniRequest, QueryFurniResponse
 from protocols.furnibook import BookFurniRequest, BookFurniResponse
-from uagents import Agent, Context
+from uagents import Agent, Context, Bureau
 from uagents.setup import fund_agent_if_low
-
+# import clothingstore as clothagent
+# import elecstore as elecagent
+# import furniturestore as furnitureagent
 CLOTHING_STORE_ADDRESS = "agent1qt5j5dgcl4gnrxqnt3jgm3klh0n623mxv9vuvfxx3haugxgwk5anczd45kw"
 ELEC_STORE_ADDRESS = "agent1qvmw8mkdg8j27rmf6reknsej2mymfmqr0ha6qs87qwtzlypvj45ku8fzfnj"
 FURNI_STORE_ADDRESS="agent1qvletnn6d9tqdy38yv5r8fhkn7ntc5fhd0ak6xmjpy7sslw7nvezyltwuep"
@@ -16,6 +18,7 @@ user = Agent(
     seed="user secret phrase",
     endpoint=["http://127.0.0.1:8000/submit"],
 )
+
 
 
 fund_agent_if_low(user.wallet.address())
@@ -144,10 +147,16 @@ if category=="Furniture":
             ctx.logger.info("Article reservation was successful.")
         else:
             ctx.logger.info("Article reservation was UNSUCCESSFUL.")
-        # ctx.storage.set("completed", True)
+    # ctx.storage.set("completed", True)
 
+
+# user.include()
 if __name__ == "__main__":
- 
-    # user.run()
-    main.run()
+    # b = Bureau(endpoint="http://127.0.0.1:8000/submit", port=8000)
+    # b.add(clothagent)
+    # b.add(elecagent)
+    # b.add(furnitureagent)
+    # b.add(user)
+    # b.run()
+    user.run()
 

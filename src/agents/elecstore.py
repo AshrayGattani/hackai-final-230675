@@ -6,9 +6,9 @@ from protocols.elecquery import ElecArticle  # Assuming ClothingArticle model is
 
 elec_store = Agent(
     name="elec_store",
-    port=8002,  # Choose a suitable port for the elec store
+    port=8000,  # Choose a suitable port for the elec store
     seed="elec_store secret phrase",
-    endpoint=["http://127.0.0.1:8002/submit"],
+    endpoint=["http://127.0.0.1:8000/submit"],
 )
 
 fund_agent_if_low(elec_store.wallet.address())
@@ -32,5 +32,5 @@ for (number, article) in ELEC_ARTICLES.items():
     elec_store._storage.set(number, article.dict())
 
 if __name__ == "__main__":
-    print(elec_store.address)
+    # print(elec_store.address)
     elec_store.run()

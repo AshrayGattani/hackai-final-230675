@@ -6,9 +6,9 @@ from protocols.query import ClothingArticle  # Assuming ClothingArticle model is
 
 clothing_store = Agent(
     name="clothing_store",
-    port=8002,  # Choose a suitable port for the clothing store
+    port=8000,  # Choose a suitable port for the clothing store
     seed="clothing_store secret phrase",
-    endpoint=["http://127.0.0.1:8002/submit"],
+    endpoint=["http://127.0.0.1:8000/submit"],
 )
 
 fund_agent_if_low(clothing_store.wallet.address())

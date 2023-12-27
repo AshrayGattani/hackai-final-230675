@@ -6,9 +6,9 @@ from protocols.furniquery import FurniArticle  # Assuming ClothingArticle model 
 
 Furni_store = Agent(
     name="Furni_store",
-    port=8002,  # Choose a suitable port for the elec store
+    port=8000,  # Choose a suitable port for the elec store
     seed="Furni_store secret phrase",
-    endpoint=["http://127.0.0.1:8002/submit"],
+    endpoint=["http://127.0.0.1:8000/submit"],
 )
 
 fund_agent_if_low(Furni_store.wallet.address())
@@ -32,5 +32,5 @@ for (number, article) in FURNI_ARTICLES.items():
     Furni_store._storage.set(number, article.dict())
 
 if __name__ == "__main__":
-    print(Furni_store.address)
+    # print(Furni_store.address)
     Furni_store.run()
