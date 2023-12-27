@@ -2,11 +2,14 @@ from protocols.query import QueryClothingRequest, QueryClothingResponse
 from protocols.book import BookClothingRequest, BookClothingResponse
 from protocols.elecquery import QueryElecRequest, QueryElecResponse
 from protocols.elecbook import BookElecRequest, BookElecResponse
+from protocols.furniquery import QueryFurniRequest, QueryFurniResponse
+from protocols.furnibook import BookFurniRequest, BookFurniResponse
 from uagents import Agent, Context
 from uagents.setup import fund_agent_if_low
 
 CLOTHING_STORE_ADDRESS = "agent1qt5j5dgcl4gnrxqnt3jgm3klh0n623mxv9vuvfxx3haugxgwk5anczd45kw"
 ELEC_STORE_ADDRESS = "agent1qvmw8mkdg8j27rmf6reknsej2mymfmqr0ha6qs87qwtzlypvj45ku8fzfnj"
+FURNI_STORE_ADDRESS="agent1qvletnn6d9tqdy38yv5r8fhkn7ntc5fhd0ak6xmjpy7sslw7nvezyltwuep"
 user = Agent(
     name="user",
     port=8000,
@@ -103,7 +106,45 @@ if category=="Electronics":
         else:
             ctx.logger.info("Article reservation was UNSUCCESSFUL.")
         # ctx.storage.set("completed", True)
+if category=="Furniture":
+    typein = input("Enter type : ")
+    colorin = input("Enter color : ")
 
+    Furniture_query = QueryFurniRequest(
+        type=typein,
+        color=colorin,
+    )
+
+    @user.on_interval(period=3.0, messages=QueryFurniRequest)
+    async def interval(ctx: Context):
+        completed = ctx.storage.get("completed")
+        if not completed:
+            await ctx.send(FURNI_STORE_ADDRESS, Furniture_query)
+
+    @user.on_message(QueryFurniResponse, replies={BookFurniRequest})
+    async def handle_query_response(ctx: Context, sender: str, msg: QueryFurniResponse):
+        if len(msg.articles) > 0:
+            ctx.logger.info("There are available Furniture articles. Proceeding to book.")
+            article_number = msg.articles[0]
+
+            request = BookFurniRequest(
+                article_number=article_number,
+                type=Furniture_query.type,
+                color=Furniture_query.color,
+            )
+
+            await ctx.send(sender, request)
+        else:
+            ctx.logger.info("No available furniture articles found.")
+            # ctx.storage.set("completed", True)
+
+    @user.on_message(BookFurniResponse, replies=set())
+    async def handle_book_response(ctx: Context, _sender: str, msg: BookFurniResponse):
+        if msg.success:
+            ctx.logger.info("Article reservation was successful.")
+        else:
+            ctx.logger.info("Article reservation was UNSUCCESSFUL.")
+        # ctx.storage.set("completed", True)
 
 if __name__ == "__main__":
  

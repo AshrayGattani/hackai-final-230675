@@ -1,0 +1,43 @@
+{
+    "1": {
+        "type": "Chair",
+        "color": "Black",
+        "available": true
+    },
+    "2": {
+        "type": "Table",
+        "color": "Silver",
+        "available": true
+    },
+    "3": {
+        "type": "Cupboard",
+        "color": "Brown",
+        "available": true
+    },
+    "4": {
+        "type": "Stool",
+        "color": "Red",
+        "available": true
+    },
+    "total_Furniture_queries": 105,
+    "1": {
+        "type": "Chair",
+        "color": "Black",
+        "available": true
+    },
+    "2": {
+        "type": "Table",
+        "color": "Silver",
+        "available": true
+    },
+    "3": {
+        "type": "Cupboard",
+        "color": "Brown",
+        "available": true
+    },
+    "4": {
+        "type": "Stool",
+        "color": "Red",
+        "available": true
+    }
+}
