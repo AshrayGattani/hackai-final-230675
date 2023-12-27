@@ -21,10 +21,14 @@ import os  # Import os for environment variables if any needed
 
 # The text to be completed by AI model
 QUESTION = input("Enter your query : ")
-name = input("Enter your name :")
-likes = input ("Enter what do you like :")
-favcolor = input("Enter favorite color : ")
-favproduct = input("Enter favorite product : ")
+# name = input("Enter your name :")
+# likes = input ("Enter what do you like :")
+# favcolor = input("Enter favorite color : ")
+# favproduct = input("Enter favorite product : ")
+name = "Shlok"
+likes = "Tshirt, Shirt & Jeans"
+favcolor = "Yellow"
+favproduct = "Electronic & Fashion"
 #"What is your Name?
 CONTEXT = f"My name is {name} and I live in Mumbai. In clothes I like {likes}. My Favourite Colour is {favcolor}. I like {favproduct}."
 # AI model agent address
