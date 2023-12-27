@@ -1,5 +1,5 @@
 from uagents import Context, Model, Protocol
-from query import ClothingArticle  # Importing ClothingArticle class from query.py
+from .query import ClothingArticle  # Importing ClothingArticle class from query.py
 
 class BookClothingRequest(Model):
     article_number: int
