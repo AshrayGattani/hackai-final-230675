@@ -13,5 +13,21 @@
         "color": "green",
         "size": "L",
         "style": "sportswear"
-    }
+    },
+    "1": {
+        "color": "blue",
+        "size": "M",
+        "style": "casual"
+    },
+    "2": {
+        "color": "red",
+        "size": "S",
+        "style": "formal"
+    },
+    "3": {
+        "color": "green",
+        "size": "L",
+        "style": "sportswear"
+    },
+    "total_clothing_queries": 81
 }

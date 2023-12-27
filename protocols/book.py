@@ -2,8 +2,11 @@ from uagents import Context, Model, Protocol
 from .query import ClothingArticle  # Importing ClothingArticle class from query.py
 
 class BookClothingRequest(Model):
-    article_number: int
-    user_id: str  # Example: user identification
+    article_number : int
+    color: str
+    size: str
+    style: str
+      # Example: user identification
     # Add other necessary fields for the booking request
 
 class BookClothingResponse(Model):

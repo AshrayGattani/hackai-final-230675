@@ -3,7 +3,7 @@ from protocols.book import BookClothingRequest, BookClothingResponse
 from uagents import Agent, Context
 from uagents.setup import fund_agent_if_low
 
-CLOTHING_STORE_ADDRESS = ""
+CLOTHING_STORE_ADDRESS = "agent1qt5j5dgcl4gnrxqnt3jgm3klh0n623mxv9vuvfxx3haugxgwk5anczd45kw"
 
 user = Agent(
     name="user",
@@ -54,3 +54,4 @@ async def handle_book_response(ctx: Context, _sender: str, msg: BookClothingResp
 
 if __name__ == "__main__":
     user.run()
+
