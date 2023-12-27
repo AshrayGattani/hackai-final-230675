@@ -12,7 +12,6 @@ from agents.imagegen_agent import agent as imagegenagent
 from agents.imagegen_user import user as imagegenuser
 from agents.gemini_agent import agent as geminiagent
 from agents.gemini_user import user as geminiuser
-# from agents.gemini_user import user
 from agents.user import user
 # print("Debug")
 
@@ -30,6 +29,7 @@ if __name__ == "__main__":
     bureau.add(imagegenagent)
     bureau.add(geminiagent)
     bureau.add(sentimentuser)
+    bureau.add(sentimentagent)
     bureau.add(contextuser)
     bureau.add(imagegenuser)
     bureau.add(geminiuser)
