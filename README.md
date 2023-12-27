@@ -1,5 +1,5 @@
 ﻿# Welcome to FetchFlow: Your Personalized Shopping Agent, powered by Fetch.ai!
-## (Team ID: 230675)
+## (Team ID: Hack-230675)
 
 With the help of Fetch.ai's innovative technology, this project creates an intelligent agent dedicated to revolutionizing the shopping experience. Fetch.ai enables the development of intelligent economic agents *capable of executing tasks on behalf of users. By carefully integrating Fetch.ai's documentation and development tools, our project has created an agent that effortlessly handles all the aspects of shopping tasks. This agent not only interprets basic user queries related to **finding products, **comparing prices, and **checking availability* but also excels in executing more complex tasks. These include *making purchases* on behalf of users, *notifying them* of more economical alternatives, employing *conversational AI for generating shopping item images, conducting **sentiment analysis on product reviews, and **preserving user preferences through context storing* for a truly personalized and *dynamic shopping assistant*. This ensures a sophisticated and efficient shopping assistant that can adapt to the diverse requirements of users giving them the ability to independently carry out tasks that align with the user's preferences in the world of online shopping.
 
@@ -69,20 +69,20 @@ With the help of Fetch.ai's innovative technology, this project creates an intel
 # Getting Started:
 ## Clone the Repository:
 Clone the project repository to your local machine using the following command:
-  bash
+```bash
  git clone https://github.com/AshrayGattani/hackai-final-230675.git
  cd hackai-final-230675
-
+```
 ## Set Up a Python Virtual Environment:
 We recommend creating a clean Python virtual environment using poetry for package management. Initialize a new poetry virtual environment:
-bash
+```bash
  poetry init -n && poetry shell
-
+```
 ## Install Dependencies:
 Now, install the required dependencies from the PyPI package registry:
-  bash
+```bash
  pip install uagents
-
+```
 ## Configure Fetch.ai:
 Set up your Fetch.ai environment by following the documentation provided by Fetch.ai. This may include creating an account, obtaining API keys, and configuring the necessary credentials.
 
@@ -94,9 +94,9 @@ To enhance conversational AI capabilities and utilize Hugging Face's model, gene
 
 ## Run the Agent:
 Start the Personal Shopping Assistant by running the main script:
-  bash
+```bash
  python main.py
-
+```
 ## Interact with the Agent:
  Once the agent is running, interact with it by providing natural language queries related to shopping. Experiment with different requests to explore the diverse functionalities of the agent.
  
