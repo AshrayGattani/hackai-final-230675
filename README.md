@@ -59,12 +59,12 @@ With the help of Fetch.ai's innovative technology, this project creates an intel
 
 ![WhatsApp Image 2023-12-27 at 22 44 14_6e281498](https://github.com/AshrayGattani/hackai-final-230675/assets/100953552/4736dbbf-d758-4b32-ac2b-86675fda0af1)
 
+![WhatsApp Image 2023-12-27 at 23 01 05_3db8e28f](https://github.com/AshrayGattani/hackai-final-230675/assets/100953552/4c3cb2c5-2d89-4152-b840-1ee3aff7c1d9)
 
 # Future Scope:
 
 - Integration with Fullstack React Shopping Website:
-
-Seamlessly integrate the Personal Shopping Assistant with the created fullstack React shopping website. This integration will empower users to interact with the assistant directly on the website, providing a unified and enhanced shopping experience.
+   Seamlessly integrate the Personal Shopping Assistant with the created fullstack React shopping website. This integration will empower users to interact with the assistant directly on the website, providing a unified and enhanced shopping experience.
 
 # Getting Started:
 ## Clone the Repository:
