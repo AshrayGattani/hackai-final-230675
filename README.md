@@ -69,20 +69,20 @@ With the help of Fetch.ai's innovative technology, this project creates an intel
 # Getting Started:
 ## Clone the Repository:
 Clone the project repository to your local machine using the following command:
-```bash
+``
  git clone https://github.com/AshrayGattani/hackai-final-230675.git
  cd hackai-final-230675
-```
+``
 ## Set Up a Python Virtual Environment:
 We recommend creating a clean Python virtual environment using poetry for package management. Initialize a new poetry virtual environment:
-```bash
+``
  poetry init -n && poetry shell
-```
+``
 ## Install Dependencies:
 Now, install the required dependencies from the PyPI package registry:
-```bash
+``
  pip install uagents
-```
+``
 ## Configure Fetch.ai:
 Set up your Fetch.ai environment by following the documentation provided by Fetch.ai. This may include creating an account, obtaining API keys, and configuring the necessary credentials.
 
@@ -94,9 +94,9 @@ To enhance conversational AI capabilities and utilize Hugging Face's model, gene
 
 ## Run the Agent:
 Start the Personal Shopping Assistant by running the main script:
-```bash
+``
  python main.py
-```
+``
 ## Interact with the Agent:
  Once the agent is running, interact with it by providing natural language queries related to shopping. Experiment with different requests to explore the diverse functionalities of the agent.
  
