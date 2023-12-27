@@ -25,7 +25,7 @@ async def handle_book_clothing_request(ctx: Context, sender: str, msg: BookCloth
     
     # Perform reservation logic based on the available articles
     if article and article.available:  # Assuming there's an 'available' attribute in ClothingArticle
-        article.reserve_for_user(msg.user_id)  # Example method to reserve the article for a user
+      # Example method to reserve the article for a user
         ctx.storage.set(msg.article_number, article.dict())
         success = True
     else:

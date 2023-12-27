@@ -18,9 +18,9 @@ clothing_store.include(cloth_book_proto)
 
 # Clothing articles available in the store
 CLOTHING_ARTICLES = {
-    1: ClothingArticle(color="blue", size="M", style="casual"),
-    2: ClothingArticle(color="red", size="S", style="formal"),
-    3: ClothingArticle(color="green", size="L", style="sportswear"),
+    1: ClothingArticle(color="blue", size="M", style="casual",available=True),
+    2: ClothingArticle(color="red", size="S", style="formal",available=True),
+    3: ClothingArticle(color="green", size="L", style="sportswear",available=True),
     # Add more clothing articles as needed
 }
 

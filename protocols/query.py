@@ -5,6 +5,7 @@ class ClothingArticle(Model):
     color: str
     size: str
     style: str
+    available: bool
 
 class QueryClothingRequest(Model):
     color: str
